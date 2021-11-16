@@ -1,0 +1,33 @@
+body {
+  overflow: hidden; /* Hide scrollbars */
+}
+
+input{
+  font-size: x-large;
+}
+
+.item1 { grid-area: header; }
+.item2 { grid-area: customer; }
+.item3 { grid-area: orders; }
+.item4 { grid-area: revenue; }
+.item5 { grid-area: footer; }
+/* .item6 { grid-area: rihgt; }
+.item7 { grid-area: left; } */
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'customer customer orders orders revenue revenue'
+    'footer footer footer footer footer footer';
+  grid-gap: 10px;
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(90, 148, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
